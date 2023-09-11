@@ -772,21 +772,35 @@
     border-radius: 25px;
     padding: 10px 40px;
 }
+.nav-fixed{
+    left: 0;
+}
+@media (min-width:1200px) {
+    .ml-lg-150{
+        margin-left: 150px;
+    }
+    .pr-xxl-40{
+        padding-right: 40px;
+    }
+}
 @media (min-width:992px) {
-    .mw-540{
+    .mw-lg-540{
         max-width: 540px;
     }
+   
 }
 @media (max-width:1200px) {
     label[for="menuicon"] {
         width: 30px;
         height: 30px;
         z-index: 3;
+        position: fixed;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         cursor: pointer;
-        position: relative;
+        z-index: 3;
+        right: 5%;
     }
 
     label[for="menuicon"]>span {
